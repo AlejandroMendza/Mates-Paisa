@@ -127,7 +127,7 @@ nav ul li {
 }
 
 .contenedor2 {
-    width: 100%;
+    width: 95%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
@@ -153,9 +153,13 @@ main div div {
     margin: 20px 38px;
 }
 
-.itemmat2 {
-    padding: 4%;
+.item-mate {
+    
+    padding: 50px;
+    margin: 20px 38px;
+
 }
+
 
 h3 {
     font-weight: bold;
@@ -210,16 +214,16 @@ fieldset {
 }
 
 .parrafo-nosotros {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     padding: 0 8% 0 0;
     line-height: 1.5;
     text-align: justify;
 }
 
 
-/*media queries hasta 734 px*/
+/*media queries hasta 950 px*/
 
-@media screen and (max-width:734px) {
+@media screen and (max-width:950px) {
 
     h1 {
         font-size: 4rem;
@@ -249,9 +253,8 @@ fieldset {
     .contenedor2 {
         display: flex;
         flex-wrap: wrap;
-        padding: 20px;
-        margin: 20px 40px;
-        width: fit-content;
+        padding: 2px;
+        margin: 20px 30px;
     }
 
     
@@ -262,6 +265,15 @@ fieldset {
         padding: 0;
         width: 17rem;
     }
+    
+.item-mate {
+    
+    padding: 10px;
+    margin: 20px 38px;
+
+}
+
+
 
 }
 
@@ -275,10 +287,9 @@ fieldset {
         margin: 0;
         justify-content: center;
     }
-
-    .itemmat {
-        padding: 0;
-    }
+.item-mate{
+    
+}
 
     .carousel-inner {
         float: none;
