@@ -1,0 +1,28 @@
+/*estilos del formulario*/
+
+
+
+form {
+    background-color: grey;
+    margin: 3rem 5rem;
+    border: solid 3px black;
+    border-radius: 10px;
+
+    fieldset {
+        color: white;
+        text-shadow: 2px 2px black;
+    
+        legend {
+            font-weight: bold;
+            margin: 0.5rem;
+        }
+    
+        input {
+            border: none;
+            border-bottom: 5px solid maroon;
+            border-radius: 10px;
+        }
+        
+    }
+}
+

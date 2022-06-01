@@ -1,0 +1,48 @@
+.encabezado {
+    background-image: $color-principal;
+
+    h1 {
+        font-family: 'Bangers', cursive;
+        color: white;
+        font-size: 6rem;
+        text-shadow: 10px 10px 20px black;
+        margin-bottom: 20px;
+        padding-top: 20px;
+    }
+}
+
+/*estilos del navegador*/
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: .3rem;
+    list-style-type: none;
+
+    .nav-link {
+        color: white !important;
+        font-size: 1.3rem;
+        margin-top: 3px;
+        &:hover {
+            color: gold !important;
+        
+    }
+
+    }
+
+    li {
+        border: solid 4px;
+        border-bottom-left-radius: 15px;
+        border-top-right-radius: 15px;
+        padding: 2px;
+        background-color: $color-secundario;
+        margin: 2px;
+        margin-top: 2px;
+
+        a {
+            text-decoration: none;
+            font-size: 25px;
+            color: white;
+        }
+    }
+}

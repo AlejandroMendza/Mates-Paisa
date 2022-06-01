@@ -1,0 +1,88 @@
+/*media queries hasta 950 px*/
+
+@media screen and (max-width:950px) {
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    nav ul {
+        justify-content: space-evenly;
+
+        li {
+            margin-top: 2px;
+        }
+        a {
+            font-size: 18px;
+        }
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .item {
+        padding: 20px;
+        margin: 20px 40px;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    .contenedor2 {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 2px;
+        margin: 20px 30px;
+
+        .item-mate {
+
+            padding: 0px;
+            margin: 20px 38px;
+    
+        }
+    }
+
+
+    .carousel-inner {
+        float: none;
+        margin: 0;
+        margin-left: 15%;
+        padding: 0;
+        width: 17rem;
+       
+    }
+
+    
+}
+
+
+@media screen and (max-width: 400px) {
+    .socialBar {
+        display: none;
+    }
+
+    .contenedor2 {
+        margin: 0;
+        justify-content: center;
+    }
+
+    .item-mate {}
+
+    .carousel-inner {
+        float: none;
+        margin: 0;
+        margin-left: 15%;
+        padding: 0;
+        width: 70%;
+    }
+
+    .parrafo-nosotros {
+        padding: 5px;
+    }
+
+    .legend {
+        margin: 0;
+    }
+}
