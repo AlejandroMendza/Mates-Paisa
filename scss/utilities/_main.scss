@@ -1,0 +1,67 @@
+/* estilos del main*/
+
+h2 {
+    font-weight: bold;
+    font-size: 3rem;
+    background-color: $color-terciario;
+}
+
+main div div {
+    border: 3px solid black;
+    border-radius: 50px 70px;
+    text-align: center;
+}
+
+.contenedor1 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .itemind {
+        padding: 50px;
+        margin: 20px 38px;
+    }
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 3rem;
+    text-align: left;
+}
+
+.mapCenter {
+    margin: 10px 25px;
+}
+
+/*contenedor 2*/
+
+.contenedor2 {
+    width: 95%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+
+    .item-mate {
+    
+        padding: 50px;
+        margin: 20px 38px;
+    
+    }
+}
+
+/*estilos del carrusel*/
+
+.carousel-inner {
+    width: 18%;
+    float: left;
+    margin: 0.8%;
+}
+
+.parrafo-nosotros {
+    font-size: 1.4rem;
+    padding: 0 8% 0 0;
+    line-height: 1.5;
+    text-align: justify;
+}
