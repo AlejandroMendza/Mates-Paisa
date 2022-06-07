@@ -1,309 +1,195 @@
-@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
-
-/* reset*/
-* {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: border-box
-}
-
-
-/* estilos del header*/
-
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
 .encabezado {
-    background-image: linear-gradient(rgba(224, 32, 32, 0.852), maroon);
-
-}
-
-h1 {
+  background-image: linear-gradient(rgba(224, 32, 32, 0.852), maroon); }
+  .encabezado h1 {
     font-family: 'Bangers', cursive;
     color: white;
     font-size: 6rem;
     text-shadow: 10px 10px 20px black;
     margin-bottom: 20px;
-    padding-top: 20px;
-}
-
+    padding-top: 20px; }
 
 /*estilos del navegador*/
-
-.nav-link {
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: .3rem;
+  list-style-type: none; }
+  nav ul .nav-link {
     color: white !important;
     font-size: 1.3rem;
-}
-
-
-nav ul {
-    display: flex;
-    justify-content: flex-end;
-    gap: .3rem;
-    list-style-type: none;
-}
-
-nav ul li a {
-    text-decoration: none;
-    font-size: 25px;
-    color: white;
-}
-
-nav ul li {
+    margin-top: 3px; }
+    nav ul .nav-link:hover {
+      color: gold !important; }
+  nav ul li {
     border: solid 4px;
     border-bottom-left-radius: 15px;
     border-top-right-radius: 15px;
     padding: 2px;
     background-color: forestgreen;
     margin: 2px;
-    margin-top: 26px;
+    margin-top: 2px; }
+    nav ul li a {
+      text-decoration: none;
+      font-size: 25px;
+      color: white; }
 
-}
-
-.nav-item {
-    margin-top: 3px;
-}
-
-.nav-item a:hover {
-    color: gold !important;
-}
-
-
-/* estilos de la barra social; zindex para colocar por encima del resto de los elementos de la página*/
-
+/* estilos de la barra social*/
 .socialBar {
-    position: fixed;
-    right: 0;
-    top: 35%;
-    font-size: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    z-index: 100;
-}
-
-
-/* estilos de los iconos de la barra social*/
-
-.icon {
+  position: fixed;
+  right: 0;
+  top: 35%;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  z-index: 100; }
+  .socialBar .icon {
     color: white;
     text-decoration: none;
     padding: 1rem;
     display: flex;
-    transition: all .5s;
-}
-
-.icon-facebook2 {
+    transition: all .5s; }
+    .socialBar .icon:hover {
+      padding-right: 5rem;
+      border-radius: 1rem 0 0 1rem;
+      box-shadow: 0 0 0.5rem rgba 0, 0, 0, 0.42; }
+  .socialBar .icon-facebook2 {
     background-color: #2E406E;
-    border-radius: 1rem 0 0 0;
-}
-
-.icon-twitter {
-    background-color: #339dc5;
-}
-
-.icon-youtube {
-    background-color: #E83028;
-}
-
-.icon-instagram {
-    background-color: rgb(216, 16, 103);
-    border-radius: 0 0 0 1rem;
-
-}
-
-.icon:hover {
-    padding-right: 5rem;
-    border-radius: 1rem 0 0 1rem;
-    box-shadow: 0 0 .5rem rgba (0, 0, 0, 0.42);
-}
-
+    border-radius: 1rem 0 0 0; }
+  .socialBar .icon-twitter {
+    background-color: #339dc5; }
+  .socialBar .icon-youtube {
+    background-color: #E83028; }
+  .socialBar .icon-instagram {
+    background-color: #d81067;
+    border-radius: 0 0 0 1rem; }
 
 /* estilos del main*/
+main div div {
+  border: 3px solid black;
+  border-radius: 50px 70px;
+  text-align: center; }
 
 .contenedor1 {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.contenedor2 {
-    width: 95%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    justify-items: center;
-}
-
-
-h2 {
-    font-weight: bold;
-    font-size: 3rem;
-    background-color: rgb(179, 177, 177);
-}
-
-
-main div div {
-    border: 3px solid black;
-    border-radius: 50px 70px;
-    text-align: center;
-}
-
-.itemind {
-    padding: 50px;
-    margin: 20px 38px;
-}
-
-.item-mate {
-    
-    padding: 50px;
-    margin: 20px 38px;
-
-}
-
-
-h3 {
-    font-weight: bold;
-    font-size: 3rem;
-    text-align: left;
-}
-
-footer {
-    font-style: italic;
-    font-weight: bold;
-    text-align: center;
-    font-size: 20px;
-    align-items: flex-end;
-}
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
 
 .mapCenter {
-    margin: 10px 15px;
-}
-
-
-/*estilos del formulario*/
-input {
-    border: none;
-    border-bottom: 5px solid maroon;
-    border-radius: 10px;
-}
-
-legend {
-    font-weight: bold;
-    margin: 0.5rem;
-}
-
-form {
-    background-color: grey;
-    margin: 3rem 5rem;
-    border: solid 3px black;
-    border-radius: 10px;
-}
-
-fieldset {
-    color: white;
-    text-shadow: 2px 2px black;
-}
-
+  margin: 10px;
+  margin-left: 25%; }
 
 /*estilos del carrusel*/
-
 .carousel-inner {
-    width: 18%;
-    float: left;
-    margin: 0.8%;
-}
+  width: 18%;
+  float: left;
+  margin: 0.8%; }
 
 .parrafo-nosotros {
-    font-size: 1.4rem;
-    padding: 0 8% 0 0;
-    line-height: 1.5;
-    text-align: justify;
-}
+  font-size: 1.4rem;
+  padding: 0 8% 0 0;
+  line-height: 1.5;
+  text-align: justify; }
 
+/*estilos del footer */
+footer {
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1rem;
+  width: 100%;
+  bottom: 0; }
+
+/*estilos del formulario*/
+form {
+  background-color: grey;
+  margin: 3rem 5rem;
+  border: solid 3px black;
+  border-radius: 10px; }
+  form fieldset {
+    color: white;
+    text-shadow: 2px 2px black; }
+    form fieldset legend {
+      font-weight: bold;
+      margin: 0.5rem; }
+    form fieldset input {
+      border: none;
+      border-bottom: 5px solid maroon;
+      border-radius: 10px; }
 
 /*media queries hasta 950 px*/
-
-@media screen and (max-width:950px) {
-
-    h1 {
-        font-size: 4rem;
-    }
-
-    nav ul li a {
-        font-size: 18px;
-    }
-
-    nav ul {
-        justify-content: space-evenly;
-    }
-
-    h2 {
-        font-size: 1.8rem;
-    }
-
-    .item {
-        padding: 20px;
-        margin: 20px 40px;
-    }
-
-    h3 {
-        font-size: 2rem;
-    }
-
-    .contenedor2 {
-        display: flex;
-        flex-wrap: wrap;
-        padding: 2px;
-        margin: 20px 30px;
-    }
-
-    
-    .carousel-inner {
-        float: none;
-        margin: 0;
-        margin-left: 15%;
-        padding: 0;
-        width: 17rem;
-    }
-    
-.item-mate {
-    
-    padding: 10px;
-    margin: 20px 38px;
-
-}
-
-
-
-}
-
+@media screen and (max-width: 950px) {
+  h1 {
+    font-size: 4rem; }
+  nav ul {
+    justify-content: space-evenly; }
+    nav ul li {
+      margin-top: 2px; }
+    nav ul a {
+      font-size: 18px; }
+  h2 {
+    font-size: 1.8rem; }
+  .item {
+    padding: 20px;
+    margin: 20px 40px; }
+  h3 {
+    font-size: 2rem; }
+  .contenedor2 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2px;
+    margin: 20px 30px; }
+    .contenedor2 .item-mate {
+      padding: 0px;
+      margin: 20px 38px; }
+  .carousel-inner {
+    float: none;
+    margin: 0;
+    margin-left: 15%;
+    padding: 0;
+    width: 17rem; } }
 
 @media screen and (max-width: 400px) {
-    .socialBar {
-        display: none;
-    }
+  .socialBar {
+    display: none; }
+  .contenedor2 {
+    margin: 0;
+    justify-content: center; }
+  .carousel-inner {
+    float: none;
+    margin: 0;
+    margin-left: 15%;
+    padding: 0;
+    width: 70%; }
+  .parrafo-nosotros {
+    padding: 5px; }
+  .legend {
+    margin: 0; } }
 
-    .contenedor2 {
-        margin: 0;
-        justify-content: center;
-    }
-.item-mate{
-    
-}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: border-box; }
 
-    .carousel-inner {
-        float: none;
-        margin: 0;
-        margin-left: 15%;
-        padding: 0;
-        width: 70%;
-    }
+body {
+  height: 100vh; }
 
-    .parrafo-nosotros {
-        padding: 5px;
-    }
+h2, h3 {
+  font-weight: bold;
+  font-size: 3rem;
+  background-color: #b3b1b1; }
 
-    .legend {
-        margin: 0;
-    }
-}
+.contenedor1 .itemind, .contenedor2 .item-mate {
+  padding: 50px;
+  margin: 20px 38px; }
+
+/*contenedor 2*/
+.contenedor2 {
+  width: 95%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  justify-items: center; }

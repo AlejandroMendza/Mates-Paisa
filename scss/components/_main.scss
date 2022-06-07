@@ -1,9 +1,7 @@
 /* estilos del main*/
 
-h2 {
-    font-weight: bold;
-    font-size: 3rem;
-    background-color: $color-terciario;
+h2 { @extend %subtitle;
+
 }
 
 main div div {
@@ -19,37 +17,19 @@ main div div {
     justify-content: center;
 
     .itemind {
-        padding: 50px;
-        margin: 20px 38px;
+        @extend%contenedores;
     }
 }
 
 h3 {
-    font-weight: bold;
-    font-size: 3rem;
-    text-align: left;
+    @extend%subtitle;
 }
 
 .mapCenter {
-    margin: 10px 25px;
+    margin: 10px;
+    margin-left: 25%;
 }
 
-/*contenedor 2*/
-
-.contenedor2 {
-    width: 95%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    justify-items: center;
-
-    .item-mate {
-    
-        padding: 50px;
-        margin: 20px 38px;
-    
-    }
-}
 
 /*estilos del carrusel*/
 

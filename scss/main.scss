@@ -2,17 +2,33 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 
-@import "./utilities/header";
+@import "./components/header";
 
-@import "./utilities/socialBar";
+@import "./components/socialBar";
 
-@import "./utilities/main";
+@import "./components/main";
 
-@import "./utilities/footer";
+@import "./components/footer";
 
-@import "./utilities/formulario";
+@import "./components/formulario";
 
-@import "./utilities/mqueries.scss";
+@import "./components/mqueries";
 
-@import "./utilities/reset"
+@import "./utilities/reset";
 
+@import "./utilities/extend";
+
+@import "./utilities/mixin";
+
+/*contenedor 2*/
+
+.contenedor2 {
+
+    @include grid;
+
+    .item-mate {
+
+        @extend%contenedores;
+
+    }
+}
