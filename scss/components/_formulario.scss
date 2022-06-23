@@ -3,24 +3,30 @@
 
 
 form {
-    background-color: grey;
+    background-color:  rgba(247, 247, 247, 0.692);
     margin: 3rem 5rem;
     border: solid 3px black;
     border-radius: 10px;
 
     fieldset {
-        color: white;
-        text-shadow: 2px 2px black;
+        color: black;
+      
     
         legend {
+            font-size: 28px;
             font-weight: bold;
             margin: 0.5rem;
         }
     
         input {
+            margin: 10px;
+            font-size: 20px;
             border: none;
-            border-bottom: 5px solid maroon;
+            border-bottom: 3px solid maroon;
             border-radius: 10px;
+        }
+        label{
+            font-size: 25px;
         }
         
     }

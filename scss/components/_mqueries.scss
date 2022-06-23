@@ -2,6 +2,16 @@
 
 @media screen and (max-width:950px) {
 
+    .index {
+        flex-direction: column-reverse;
+
+        .image {
+            width: 35vh;
+            margin-bottom: 7px;
+        }
+    }
+
+
     h1 {
         font-size: 4rem;
     }
@@ -12,6 +22,7 @@
         li {
             margin-top: 2px;
         }
+
         a {
             font-size: 18px;
         }
@@ -40,35 +51,62 @@
 
             padding: 0px;
             margin: 20px 38px;
-    
+
         }
     }
 
+    .carText {
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
 
     .carousel-inner {
         float: none;
         margin: 0;
-        margin-left: 15%;
         padding: 0;
         width: 17rem;
-       
+
     }
 
-    
+    .parrafo-nosotros {
+        margin-left: 8%;
+        margin-right: 8%;
+        position: relative;
+        font-size: 1.4rem;
+
+    }
+
+    .socialBar {
+        font-size: 1.6rem;
+    }
 }
 
-
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 700px) {
+    
     .socialBar {
         display: none;
     }
+
+
+}
+
+@media screen and (max-width: 400px) {
+    .index {
+        flex-direction: column-reverse;
+
+        .image {
+            width: 30vh;
+            margin-bottom: 7px;
+        }
+    }
+
 
     .contenedor2 {
         margin: 0;
         justify-content: center;
     }
-
-    .item-mate {}
 
     .carousel-inner {
         float: none;

@@ -1,14 +1,9 @@
 .encabezado {
     background-image: $color-principal;
+    div div img{ width: 10rem;
+    margin: 10px;
+border-radius: 6rem;}
 
-    h1 {
-        font-family: 'Bangers', cursive;
-        color: white;
-        font-size: 6rem;
-        text-shadow: 10px 10px 20px black;
-        margin-bottom: 20px;
-        padding-top: 20px;
-    }
 }
 
 /*estilos del navegador*/

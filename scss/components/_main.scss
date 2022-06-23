@@ -1,14 +1,63 @@
 /* estilos del main*/
 
-h2 { @extend %subtitle;
+h1{ 
+    @extend %subtitle
+}
+
+h2 {
+    @extend %subtitle;
 
 }
 
-main div div {
-    border: 3px solid black;
-    border-radius: 50px 70px;
-    text-align: center;
+main {
+    background-image: url(/img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
 }
+
+.index {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+
+    .image {
+        width: 40vh; 
+        animation: float 3s linear infinite;
+    }
+
+    h1 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 5.5rem;
+        color: black;
+        font-weight: bold;
+        text-shadow: 2px 2px green;
+        margin-right: 4rem;
+    }
+
+    .textIndex {
+        p {
+            font-size: 1.7rem;
+            margin-right: 4rem;
+        }
+
+    }
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0rem);
+    }
+
+    50% {
+        transform: translateY(-3.5rem);
+    }
+}
+
 
 .contenedor1 {
     width: 100%;
@@ -17,6 +66,10 @@ main div div {
     justify-content: center;
 
     .itemind {
+        border: 3px solid black;
+        border-radius: 50px 70px;
+        text-align: center;
+        background-color: white;
         @extend%contenedores;
     }
 }
@@ -34,14 +87,61 @@ h3 {
 /*estilos del carrusel*/
 
 .carousel-inner {
-    width: 18%;
+    width: 26%;
     float: left;
-    margin: 0.8%;
+    margin: 0.5%;
+    margin-left: 3%;
+    border: 1px solid black;
+    border-radius: 50px 70px;
 }
 
 .parrafo-nosotros {
-    font-size: 1.4rem;
-    padding: 0 8% 0 0;
+    font-size: 1.6rem;
+    padding: 10px;
+    margin: 3% ;
+    margin-left: 32%;
+    margin-right: 6%;
     line-height: 1.5;
     text-align: justify;
+    background-color: rgba(247, 247, 247, 0.692);
+}
+
+/*estilos de cards*/
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    .card{
+        display: flex;
+        align-items: center;
+        width: 330px;
+        height: 430px;
+        border-radius: 8px;
+        box-shadow: 3px 3px 3px rgba(108, 172, 108, 0.692);
+        overflow: hidden;
+        margin: 20px;
+        text-align: center;
+        transition: all 0.25s;
+        img{
+        height: 250px;
+        
+        }
+        .title{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 30px;
+            text-align: center;
+            color: #000000;
+            font-weight: bold;
+            text-shadow: 3px 3px 3px rgba(108, 172, 108, 0.692);
+        }
+    }
+    .card:hover{
+        transform: translateY(-15px);
+        box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+    }
 }
